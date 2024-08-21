@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  @apply mx-auto max-h-[1123px] max-w-[794px] rounded border p-4 shadow-md;
+}
+
+h1 {
+  @apply mb-0 mt-0 text-[20px] font-semibold leading-[20px];
+}
+
+h2 {
+  @apply my-1 text-[16px] font-medium leading-[16px];
+}
+
+h3 {
+  @apply mb-1 mt-2 text-[14px] font-semibold leading-[14px];
+}
+
+p {
+  @apply mb-0 mt-0.5 text-[13px] leading-[13px];
+}
+
+a {
+  @apply text-blue-600 hover:text-blue-800;
+}
+
+ul {
+  @apply mb-1.5 mt-0.5 list-inside list-disc pl-0.5;
+}
+
+li {
+  @apply mb-0 mt-0.5 text-[13px] leading-[13px];
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+}
