@@ -1,5 +1,6 @@
 'use client'
 import {useSearchParams} from 'next/navigation'
+import {Suspense} from 'react'
 
 export default function PDFPreview() {
   const searchParams = useSearchParams()
@@ -8,9 +9,11 @@ export default function PDFPreview() {
   return (
     <>
       {pdfUrl ? (
-        <iframe src={pdfUrl} style={{width: '100%', height: '100vh'}} />
+        <Suspense fallback={<p>Loading PDF...</p>}>
+          <iframe src={pdfUrl} style={{width: '100%', height: '100vh'}} />
+        </Suspense>
       ) : (
-        <p>Loading...</p>
+        <p>No PDF URL provided.</p>
       )}
     </>
   )
