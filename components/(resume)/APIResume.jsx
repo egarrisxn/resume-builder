@@ -1,11 +1,6 @@
 'use client'
 import {useEffect, useState} from 'react'
-import {Contact} from '@/components/sections/contact'
-import {Summary} from '@/components/sections/summary'
-import {Experience} from '@/components/sections/experience'
-import {Education} from '@/components/sections/education'
-import {Skills} from '@/components/sections/skills'
-import {Projects} from '@/components/sections/projects'
+import {Contact, Summary, Experience, Education, Skills, Projects} from '@/components/sections'
 
 export default function APIResume() {
   const [resumeData, setResumeData] = useState({
@@ -40,7 +35,7 @@ export default function APIResume() {
   }, [])
 
   return (
-    <main id='resume'>
+    <main>
       <Contact data={resumeData.contact} />
       <Summary data={resumeData.summary} />
       <Experience data={resumeData.experience} />

@@ -22,6 +22,10 @@ h4 {
   @apply mb-1 mt-0 text-balance text-[15px] leading-[20px];
 }
 
+h5 {
+  @apply mx-auto max-w-[800px] text-balance text-[13px] leading-[13px];
+}
+
 p {
   @apply mb-0 mt-0.5 overflow-x-clip text-balance text-[13px] leading-[13px];
 }
@@ -36,10 +40,6 @@ ul {
 
 li {
   @apply mb-0 mt-0.5 text-balance text-[13px] leading-[13px];
-}
-
-ul > li > span {
-  @apply relative -left-2;
 }
 
 /* Firefox */

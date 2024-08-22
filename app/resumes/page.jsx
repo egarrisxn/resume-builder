@@ -4,20 +4,27 @@ import PDFButtons from '@/components/(PDF)/Buttons'
 export default function ResumesPage() {
   return (
     <>
-      <section className='flex flex-col items-start justify-start gap-2 pl-4 pt-4 text-sm sm:pl-24 sm:pt-24 sm:text-base'>
+      <section className='mt-4 flex flex-col items-start justify-start gap-2 pl-4 text-sm sm:mt-24 sm:pl-24'>
         <h1>Different ways to resume!</h1>
-        <div className='flex flex-col gap-2 sm:flex-row sm:gap-4'>
+        <p>
+          <span className='font-medium'>Note: </span>Examples vary from final PDF version.
+        </p>
+        <div className='flex flex-row gap-2'>
           <Link href='/resume/api'>API</Link>
           <Link href='/resume/json'>JSON</Link>
-          <Link href='/resume/text'>Text</Link>
-          <Link href='/resume/markdown'>Markdown</Link>
-          <Link href='/resume/mdx/1'>MDX-1</Link>
-          <Link href='/resume/mdx/2'>MDX-2</Link>
+          <Link href='/resume/text'>TEXT</Link>
+          <Link href='/resume/markdown/1'>MD1</Link>
+          <Link href='/resume/markdown/2'>MD2</Link>
+          <Link href='/resume/mdx/1'>MDX1</Link>
+          <Link href='/resume/mdx/2'>MDX2</Link>
         </div>
       </section>
-      <section className='flex flex-col items-end justify-end gap-2 pb-4 pr-4 text-sm sm:pb-24 sm:pr-24 sm:text-base'>
+      <section className='mb-4 flex flex-col items-end justify-end gap-2 pr-4 text-sm sm:mb-24 sm:pr-24'>
+        <h1>Generate yours now!</h1>
+        <p>
+          <span className='font-medium'>Note: </span>Must clone project to start.
+        </p>
         <PDFButtons />
-        <h1>Save yours now!</h1>
       </section>
     </>
   )

@@ -38,16 +38,12 @@ export default function TextResume() {
       </p>
       <ul>
         <li>
-          <span>
-            Develop and deploy applications using modern frameworks like React and Node.js,
-            delivering scalable solutions for client needs.
-          </span>
+          Develop and deploy applications using modern frameworks like React and Node.js, delivering
+          scalable solutions for client needs.
         </li>
         <li>
-          <span>
-            Implement responsive, accessible design principles for optimal user experience and
-            standards compliance.
-          </span>
+          Implement responsive, accessible design principles for optimal user experience and
+          standards compliance.
         </li>
       </ul>
 
@@ -58,16 +54,12 @@ export default function TextResume() {
       </p>
       <ul>
         <li>
-          <span>
-            Boosted regional sales by 20% through targeted marketing campaigns and strategic
-            partnerships with distributors.
-          </span>
+          Boosted regional sales by 20% through targeted marketing campaigns and strategic
+          partnerships with distributors.
         </li>
         <li>
-          <span>
-            Streamlined coordination between sales and production teams, enhancing efficiency and
-            alignment across departments.
-          </span>
+          Streamlined coordination between sales and production teams, enhancing efficiency and
+          alignment across departments.
         </li>
       </ul>
 
@@ -78,16 +70,12 @@ export default function TextResume() {
       </p>
       <ul>
         <li>
-          <span>
-            Drove a 25% increase in sales by expanding market reach and establishing strong
-            distributor relationships.
-          </span>
+          Drove a 25% increase in sales by expanding market reach and establishing strong
+          distributor relationships.
         </li>
         <li>
-          <span>
-            Championed collaborative strategies between sales, marketing, and production teams,
-            aligning efforts to meet company growth objectives.
-          </span>
+          Championed collaborative strategies between sales, marketing, and production teams,
+          aligning efforts to meet company growth objectives.
         </li>
       </ul>
 
@@ -98,16 +86,12 @@ export default function TextResume() {
       </p>
       <ul>
         <li>
-          <span>
-            Achieved significant reduction in costs through operational improvements, while
-            upholding high service standards.
-          </span>
+          Achieved significant reduction in costs through operational improvements, while upholding
+          high service standards.
         </li>
         <li>
-          <span>
-            Led a team of 15+ employees, instilling a culture of continuous improvement and setting
-            new standards for service excellence.
-          </span>
+          Led a team of 15+ employees, instilling a culture of continuous improvement and setting
+          new standards for service excellence.
         </li>
       </ul>
 
@@ -118,16 +102,11 @@ export default function TextResume() {
       </p>
       <ul>
         <li>
-          <span>
-            Strengthened client relationships and improved satisfaction, leading to increased
-            retention and customer loyalty.
-          </span>
+          Strengthened client relationships and improved satisfaction, leading to increased
+          retention and customer loyalty.
         </li>
         <li>
-          <span>
-            Educated clients on trending products, resulting in higher engagement and repeat
-            business.
-          </span>
+          Educated clients on trending products, resulting in higher engagement and repeat business.
         </li>
       </ul>
 
@@ -138,16 +117,12 @@ export default function TextResume() {
       </p>
       <ul>
         <li>
-          <span>
-            Enhanced team productivity, driving operational efficiency and achieving significant
-            performance improvements.
-          </span>
+          Enhanced team productivity, driving operational efficiency and achieving significant
+          performance improvements.
         </li>
         <li>
-          <span>
-            Fostered a culture of innovation, leading to continuous operational enhancements and
-            setting new benchmarks for the business.
-          </span>
+          Fostered a culture of innovation, leading to continuous operational enhancements and
+          setting new benchmarks for the business.
         </li>
       </ul>
 
@@ -172,33 +147,20 @@ export default function TextResume() {
       <h3>Technical Skills</h3>
       <ul>
         <li>
-          <span>
-            Front-End Development: HTML, CSS, JavaScript, TypeScript, React, Next.js, Angular,
-            Astro, Tailwind CSS
-          </span>
+          Front-End Development: HTML, CSS, JavaScript, TypeScript, React, Next.js, Angular, Astro,
+          Tailwind CSS
         </li>
         <li>
-          <span>
-            Back-End Development: Node.js, Express.js, REST APIs, MongoDB, MySQL, PostgreSQL,
-            GraphQL
-          </span>
+          Back-End Development: Node.js, Express.js, REST APIs, MongoDB, MySQL, PostgreSQL, GraphQL
         </li>
         <li>
-          <span>
-            DevOps/Tools: Git, Webpack, Vite, ESLint, Sanity, Supabase, Vercel, Heroku, npm, pnpm
-          </span>
+          DevOps/Tools: Git, Webpack, Vite, ESLint, Sanity, Supabase, Vercel, Heroku, npm, pnpm
         </li>
         <li>
-          <span>
-            Best Practices & Methodologies: Agile, Continuous Integration & Deployment, Performance
-            Optimization, SEO
-          </span>
+          Best Practices & Methodologies: Agile, Continuous Integration & Deployment, Performance
+          Optimization, SEO
         </li>
-        <li>
-          <span>
-            Soft Skills: Project Management, Leadership, Communication, Adaptability, Teamwork
-          </span>
-        </li>
+        <li>Soft Skills: Project Management, Leadership, Communication, Adaptability, Teamwork</li>
       </ul>
 
       <h3>Projects</h3>
@@ -214,16 +176,10 @@ export default function TextResume() {
       </p>
       <ul>
         <li>
-          <span>
-            Developed a website for a content creator, focusing on SEO best practices and seamless
-            integration with a headless CMS.
-          </span>
+          Developed a website for a content creator, focusing on SEO best practices and seamless
+          integration with a headless CMS.
         </li>
-        <li>
-          <span>
-            Tech Stack: JavaScript, Node.js, React, Next.js, Sanity, Tailwind CSS, daisyUI.
-          </span>
-        </li>
+        <li>Tech Stack: JavaScript, Node.js, React, Next.js, Sanity, Tailwind CSS, daisyUI.</li>
       </ul>
 
       <p>
@@ -241,16 +197,10 @@ export default function TextResume() {
       </p>
       <ul>
         <li>
-          <span>
-            Built a modern e-commerce storefront with a client-centric design, optimizing user
-            experience and potential sales conversion.
-          </span>
+          Built a modern e-commerce storefront with a client-centric design, optimizing user
+          experience and potential sales conversion.
         </li>
-        <li>
-          <span>
-            Tech Stack: JavaScript, Node.js, React, Next.js, Sanity, Stripe, Tailwind CSS.
-          </span>
-        </li>
+        <li>Tech Stack: JavaScript, Node.js, React, Next.js, Sanity, Stripe, Tailwind CSS.</li>
       </ul>
 
       <p>
@@ -265,14 +215,10 @@ export default function TextResume() {
       </p>
       <ul>
         <li>
-          <span>
-            Created a personal website and portfolio, highlighting projects and skills with a clean
-            and responsive design.
-          </span>
+          Created a personal website and portfolio, highlighting projects and skills with a clean
+          and responsive design.
         </li>
-        <li>
-          <span>Tech Stack: JavaScript, Node.js, React, Next.js, Tailwind CSS, shadcn/ui.</span>
-        </li>
+        <li>Tech Stack: JavaScript, Node.js, React, Next.js, Tailwind CSS, shadcn/ui.</li>
       </ul>
 
       <p>
@@ -287,14 +233,10 @@ export default function TextResume() {
       </p>
       <ul>
         <li>
-          <span>
-            Developed a server-side rendered blog, focusing on delivering insightful content with
-            optimal performance.
-          </span>
+          Developed a server-side rendered blog, focusing on delivering insightful content with
+          optimal performance.
         </li>
-        <li>
-          <span>Tech Stack: TypeScript, Node.js, Astro, Tailwind CSS.</span>
-        </li>
+        <li>Tech Stack: TypeScript, Node.js, Astro, Tailwind CSS.</li>
       </ul>
 
       <p>
@@ -309,14 +251,10 @@ export default function TextResume() {
       </p>
       <ul>
         <li>
-          <span>
-            Built an intuitive movie database application featuring detailed information and a
-            user-friendly interface.
-          </span>
+          Built an intuitive movie database application featuring detailed information and a
+          user-friendly interface.
         </li>
-        <li>
-          <span>Tech Stack: TypeScript, Node.js, Angular, Tailwind CSS.</span>
-        </li>
+        <li>Tech Stack: TypeScript, Node.js, Angular, Tailwind CSS.</li>
       </ul>
     </main>
   )
