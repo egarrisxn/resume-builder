@@ -1,6 +1,6 @@
+import {compileMDX} from 'next-mdx-remote/rsc'
 import fs from 'fs'
 import path from 'path'
-import {compileMDX} from 'next-mdx-remote/rsc'
 
 export async function MDX1() {
   const filePath = path.join(process.cwd(), 'app', 'data', 'resume.mdx')
@@ -16,9 +16,5 @@ export async function MDX1() {
 export default async function MDX1Resume({params}) {
   const {content} = await MDX1(params)
 
-  return (
-    <div className='my-4'>
-      <main>{content}</main>
-    </div>
-  )
+  return <main>{content}</main>
 }

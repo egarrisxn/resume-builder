@@ -6,10 +6,9 @@ export function MDX2(props) {
 
 export default function MDX2Resume() {
   return (
-    <div className='my-4'>
-      <main>
-        <MDX2
-          source={`
+    <main>
+      <MDX2
+        source={`
             # Ethan Garrison (he/him)
 
             ## Full-Stack Developer
@@ -113,8 +112,7 @@ export default function MDX2Resume() {
             - Built an intuitive movie database application featuring detailed information and a user-friendly interface.
             - Tech Stack: TypeScript, Node.js, Angular, Tailwind CSS.
           `}
-        />
-      </main>
-    </div>
+      />
+    </main>
   )
 }

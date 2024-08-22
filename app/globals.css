@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 main {
-  @apply mx-auto max-h-[1123px] max-w-[794px] rounded border p-4 shadow-md;
+  @apply max-h-full max-w-60 p-2 min-[330px]:max-w-80 min-[400px]:max-w-96 min-[420px]:max-w-full min-[480px]:p-4 md:mx-auto md:max-h-[1123px] md:max-w-[794px] md:rounded md:border md:shadow-md;
 }
 
 h1 {
@@ -18,8 +18,12 @@ h3 {
   @apply mb-1 mt-2 text-[14px] font-semibold leading-[14px];
 }
 
+h4 {
+  @apply mb-1 mt-0 text-balance text-[15px] leading-[20px];
+}
+
 p {
-  @apply mb-0 mt-0.5 text-[13px] leading-[13px];
+  @apply mb-0 mt-0.5 overflow-x-clip text-balance text-[13px] leading-[13px];
 }
 
 a {
@@ -27,11 +31,15 @@ a {
 }
 
 ul {
-  @apply mb-1.5 mt-0.5 list-inside list-disc pl-0.5;
+  @apply mb-1.5 mt-0.5 list-inside list-disc text-balance pl-0.5;
 }
 
 li {
-  @apply mb-0 mt-0.5 text-[13px] leading-[13px];
+  @apply mb-0 mt-0.5 text-balance text-[13px] leading-[13px];
+}
+
+ul > li > span {
+  @apply relative -left-2;
 }
 
 /* Firefox */

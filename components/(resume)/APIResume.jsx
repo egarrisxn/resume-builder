@@ -40,15 +40,13 @@ export default function APIResume() {
   }, [])
 
   return (
-    <div className='my-4'>
-      <main id='resume'>
-        <Contact data={resumeData.contact} />
-        <Summary data={resumeData.summary} />
-        <Experience data={resumeData.experience} />
-        <Education data={resumeData.education} />
-        <Skills data={resumeData.skills} />
-        <Projects data={resumeData.projects} />
-      </main>
-    </div>
+    <main id='resume'>
+      <Contact data={resumeData.contact} />
+      <Summary data={resumeData.summary} />
+      <Experience data={resumeData.experience} />
+      <Education data={resumeData.education} />
+      <Skills data={resumeData.skills} />
+      <Projects data={resumeData.projects} />
+    </main>
   )
 }

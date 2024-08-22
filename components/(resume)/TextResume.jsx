@@ -1,267 +1,323 @@
 export default function TextResume() {
   return (
-    <div className='my-4'>
-      <main>
-        <h1>Ethan Garrison (he/him)</h1>
-        <h2>Full-Stack Developer</h2>
-        <p>
-          <span>Orlando, Florida, United States</span> | <a href='tel:+15802844513'>+15802844513</a>{' '}
-          | <a href='mailto:egarrisxn@gmail.com'>Egarrisxn@gmail.com</a>
-        </p>
-        <p>
-          <a href='https://egxworld.net' target='_blank'>
-            egxworld.net
-          </a>{' '}
-          |{' '}
-          <a href='https://github.com/egarrisxn' target='_blank'>
-            github.com/egarrisxn
-          </a>{' '}
-          |{' '}
-          <a href='https://linkedin.com/in/ethan-gx' target='_blank'>
-            linkedin.com/in/ethan-gx
-          </a>
-        </p>
+    <main>
+      <h1>Ethan Garrison (he/him)</h1>
+      <h2>Full-Stack Developer</h2>
+      <p>
+        <span>Orlando, Florida, United States</span> | <a href='tel:+15802844513'>+15802844513</a> |{' '}
+        <a href='mailto:egarrisxn@gmail.com'>Egarrisxn@gmail.com</a>
+      </p>
+      <p>
+        <a href='https://egxworld.net' target='_blank'>
+          egxworld.net
+        </a>{' '}
+        |{' '}
+        <a href='https://github.com/egarrisxn' target='_blank'>
+          github.com/egarrisxn
+        </a>{' '}
+        |{' '}
+        <a href='https://linkedin.com/in/ethan-gx' target='_blank'>
+          linkedin.com/in/ethan-gx
+        </a>
+      </p>
 
-        <h3>Summary</h3>
-        <p>
-          Dynamic Full-Stack Developer with a strong foundation in management, now focused on
-          front-end development and server-side programming. Skilled in creating responsive and
-          accessible user interfaces, managing databases, and integrating APIs. Proficient in Agile
-          methodologies and optimization, delivering scalable web solutions that meet user needs and
-          business goals.
-        </p>
+      <h3>Summary</h3>
+      <p>
+        Dynamic Full-Stack Developer with a strong foundation in management, now focused on
+        front-end development and server-side programming. Skilled in creating responsive and
+        accessible user interfaces, managing databases, and integrating APIs. Proficient in Agile
+        methodologies and optimization, delivering scalable web solutions that meet user needs and
+        business goals.
+      </p>
 
-        <h3>Work Experience</h3>
-        <p>Full-Stack Developer</p>
-        <p>
-          <span className='italic'>June 2023 - Present </span>| Freelance, Orlando, Florida, United
-          States
-        </p>
-        <ul>
-          <li>
+      <h3>Work Experience</h3>
+      <p>Full-Stack Developer</p>
+      <p>
+        <span className='italic'>June 2023 - Present </span>| Freelance, Orlando, Florida, United
+        States
+      </p>
+      <ul>
+        <li>
+          <span>
             Develop and deploy applications using modern frameworks like React and Node.js,
             delivering scalable solutions for client needs.
-          </li>
-          <li>
+          </span>
+        </li>
+        <li>
+          <span>
             Implement responsive, accessible design principles for optimal user experience and
             standards compliance.
-          </li>
-        </ul>
+          </span>
+        </li>
+      </ul>
 
-        <p>Regional Account Manager</p>
-        <p>
-          <span className='italic'>Aug 2021 - Dec 2022 </span>| Roughtail Brewing Company, Edmond,
-          Oklahoma, United States
-        </p>
-        <ul>
-          <li>
+      <p>Regional Account Manager</p>
+      <p>
+        <span className='italic'>Aug 2021 - Dec 2022 </span>| Roughtail Brewing Company, Edmond,
+        Oklahoma, United States
+      </p>
+      <ul>
+        <li>
+          <span>
             Boosted regional sales by 20% through targeted marketing campaigns and strategic
             partnerships with distributors.
-          </li>
-          <li>
+          </span>
+        </li>
+        <li>
+          <span>
             Streamlined coordination between sales and production teams, enhancing efficiency and
             alignment across departments.
-          </li>
-        </ul>
+          </span>
+        </li>
+      </ul>
 
-        <p>Sales Manager</p>
-        <p>
-          <span className='italic'>Dec 2019 - Aug 2021 </span> | Armadillo Ale Works, Denton, Texas,
-          United States
-        </p>
-        <ul>
-          <li>
+      <p>Sales Manager</p>
+      <p>
+        <span className='italic'>Dec 2019 - Aug 2021 </span> | Armadillo Ale Works, Denton, Texas,
+        United States
+      </p>
+      <ul>
+        <li>
+          <span>
             Drove a 25% increase in sales by expanding market reach and establishing strong
             distributor relationships.
-          </li>
-          <li>
+          </span>
+        </li>
+        <li>
+          <span>
             Championed collaborative strategies between sales, marketing, and production teams,
             aligning efforts to meet company growth objectives.
-          </li>
-        </ul>
+          </span>
+        </li>
+      </ul>
 
-        <p>Assistant General Manager</p>
-        <p>
-          <span className='italic'>Mar 2018 - Dec 2019 </span> | Northside Drafthouse, Richardson,
-          Texas, United States
-        </p>
-        <ul>
-          <li>
+      <p>Assistant General Manager</p>
+      <p>
+        <span className='italic'>Mar 2018 - Dec 2019 </span> | Northside Drafthouse, Richardson,
+        Texas, United States
+      </p>
+      <ul>
+        <li>
+          <span>
             Achieved significant reduction in costs through operational improvements, while
             upholding high service standards.
-          </li>
-          <li>
+          </span>
+        </li>
+        <li>
+          <span>
             Led a team of 15+ employees, instilling a culture of continuous improvement and setting
             new standards for service excellence.
-          </li>
-        </ul>
+          </span>
+        </li>
+      </ul>
 
-        <p>Account Manager</p>
-        <p>
-          <span className='italic'>Feb 2015 - Mar 2018 </span> | FullClip Craft Distributors,
-          Dallas, Texas, United States
-        </p>
-        <ul>
-          <li>
+      <p>Account Manager</p>
+      <p>
+        <span className='italic'>Feb 2015 - Mar 2018 </span> | FullClip Craft Distributors, Dallas,
+        Texas, United States
+      </p>
+      <ul>
+        <li>
+          <span>
             Strengthened client relationships and improved satisfaction, leading to increased
             retention and customer loyalty.
-          </li>
-          <li>
+          </span>
+        </li>
+        <li>
+          <span>
             Educated clients on trending products, resulting in higher engagement and repeat
             business.
-          </li>
-        </ul>
+          </span>
+        </li>
+      </ul>
 
-        <p>General Manager</p>
-        <p>
-          <span className='italic'> Aug 2011 - Feb 2015 </span> | Dallas Beer Kitchen, Dallas,
-          Texas, United States
-        </p>
-        <ul>
-          <li>
+      <p>General Manager</p>
+      <p>
+        <span className='italic'> Aug 2011 - Feb 2015 </span> | Dallas Beer Kitchen, Dallas, Texas,
+        United States
+      </p>
+      <ul>
+        <li>
+          <span>
             Enhanced team productivity, driving operational efficiency and achieving significant
             performance improvements.
-          </li>
-          <li>
+          </span>
+        </li>
+        <li>
+          <span>
             Fostered a culture of innovation, leading to continuous operational enhancements and
             setting new benchmarks for the business.
-          </li>
-        </ul>
-
-        <h3>Education & Certifications</h3>
-        <p>
-          <span className='font-semibold'>Certification</span> - Full-Stack Development Boot Camp |{' '}
-          <span className='italic'>Mar 2023 - June 2023</span>
-        </p>
-        <p>University of Central Florida, Orlando, Florida, United States</p>
-        <p>
-          <span className='italic'>
-            Credentials: https://badgr.com/public/assertions/zGk2wldtSXqeMhEOz2wX5Q
           </span>
-        </p>
+        </li>
+      </ul>
 
-        <p>
-          <span className='font-semibold'>Studied</span> - Business Management |{' '}
-          <span className='italic'>Aug 2008 - Dec 2009</span>
-        </p>
-        <p>University of Central Oklahoma, Edmond, Oklahoma, United States</p>
+      <h3>Education & Certifications</h3>
+      <p>
+        <span className='font-semibold'>Certification</span> - Full-Stack Development Boot Camp |{' '}
+        <span className='italic'>Mar 2023 - June 2023</span>
+      </p>
+      <p>University of Central Florida, Orlando, Florida, United States</p>
+      <p>
+        <span className='italic'>
+          Credentials: https://badgr.com/public/assertions/zGk2wldtSXqeMhEOz2wX5Q
+        </span>
+      </p>
 
-        <h3>Technical Skills</h3>
-        <ul>
-          <li>
+      <p>
+        <span className='font-semibold'>Studied</span> - Business Management |{' '}
+        <span className='italic'>Aug 2008 - Dec 2009</span>
+      </p>
+      <p>University of Central Oklahoma, Edmond, Oklahoma, United States</p>
+
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>
+          <span>
             Front-End Development: HTML, CSS, JavaScript, TypeScript, React, Next.js, Angular,
             Astro, Tailwind CSS
-          </li>
-          <li>
+          </span>
+        </li>
+        <li>
+          <span>
             Back-End Development: Node.js, Express.js, REST APIs, MongoDB, MySQL, PostgreSQL,
             GraphQL
-          </li>
-          <li>
+          </span>
+        </li>
+        <li>
+          <span>
             DevOps/Tools: Git, Webpack, Vite, ESLint, Sanity, Supabase, Vercel, Heroku, npm, pnpm
-          </li>
-          <li>
+          </span>
+        </li>
+        <li>
+          <span>
             Best Practices & Methodologies: Agile, Continuous Integration & Deployment, Performance
             Optimization, SEO
-          </li>
-          <li>
+          </span>
+        </li>
+        <li>
+          <span>
             Soft Skills: Project Management, Leadership, Communication, Adaptability, Teamwork
-          </li>
-        </ul>
+          </span>
+        </li>
+      </ul>
 
-        <h3>Projects</h3>
-        <p>
-          Sway Bae Official{' '}
-          <a href='https://swaybae.net' target='_blank'>
-            (swaybae.net)
-          </a>{' '}
-          |{' '}
-          <a href='https://github.com/egarrisxn/swaybaeofficial' target='_blank'>
-            github.com/egarrisxn/swaybaeofficial
-          </a>
-        </p>
-        <ul>
-          <li>
+      <h3>Projects</h3>
+      <p>
+        Sway Bae Official{' '}
+        <a href='https://swaybae.net' target='_blank'>
+          (swaybae.net)
+        </a>{' '}
+        |{' '}
+        <a href='https://github.com/egarrisxn/swaybaeofficial' target='_blank'>
+          github.com/egarrisxn/swaybaeofficial
+        </a>
+      </p>
+      <ul>
+        <li>
+          <span>
             Developed a website for a content creator, focusing on SEO best practices and seamless
             integration with a headless CMS.
-          </li>
-          <li>Tech Stack: JavaScript, Node.js, React, Next.js, Sanity, Tailwind CSS, daisyUI.</li>
-        </ul>
+          </span>
+        </li>
+        <li>
+          <span>
+            Tech Stack: JavaScript, Node.js, React, Next.js, Sanity, Tailwind CSS, daisyUI.
+          </span>
+        </li>
+      </ul>
 
-        <p>
-          Unofficial Merchandise{' '}
-          <a href='https://unofficialmerchandise.vercel.app' target='_blank'>
-            (unofficialmerchandise.vercel.app)
-          </a>{' '}
-          |{' '}
-          <a
-            href='https://github.com/egarrisxn/github.com/egarrisxn/unofficial-merchandise'
-            target='_blank'
-          >
-            github.com/egarrisxn/unofficial-merchandise
-          </a>
-        </p>
-        <ul>
-          <li>
+      <p>
+        Unofficial Merchandise{' '}
+        <a href='https://unofficialmerchandise.vercel.app' target='_blank'>
+          (unofficialmerchandise.vercel.app)
+        </a>{' '}
+        |{' '}
+        <a
+          href='https://github.com/egarrisxn/github.com/egarrisxn/unofficial-merchandise'
+          target='_blank'
+        >
+          github.com/egarrisxn/unofficial-merchandise
+        </a>
+      </p>
+      <ul>
+        <li>
+          <span>
             Built a modern e-commerce storefront with a client-centric design, optimizing user
             experience and potential sales conversion.
-          </li>
-          <li>Tech Stack: JavaScript, Node.js, React, Next.js, Sanity, Stripe, Tailwind CSS.</li>
-        </ul>
+          </span>
+        </li>
+        <li>
+          <span>
+            Tech Stack: JavaScript, Node.js, React, Next.js, Sanity, Stripe, Tailwind CSS.
+          </span>
+        </li>
+      </ul>
 
-        <p>
-          EGxWorld v1{' '}
-          <a href='https://egxworld.vercel.app' target='_blank'>
-            (egxworld.vercel.app)
-          </a>{' '}
-          |{' '}
-          <a href='https://github.com/egarrisxn/egxworld-v1' target='_blank'>
-            github.com/egarrisxn/egxworld-v1
-          </a>
-        </p>
-        <ul>
-          <li>
+      <p>
+        EGxWorld v1{' '}
+        <a href='https://egxworld.vercel.app' target='_blank'>
+          (egxworld.vercel.app)
+        </a>{' '}
+        |{' '}
+        <a href='https://github.com/egarrisxn/egxworld-v1' target='_blank'>
+          github.com/egarrisxn/egxworld-v1
+        </a>
+      </p>
+      <ul>
+        <li>
+          <span>
             Created a personal website and portfolio, highlighting projects and skills with a clean
             and responsive design.
-          </li>
-          <li>Tech Stack: JavaScript, Node.js, React, Next.js, Tailwind CSS, shadcn/ui.</li>
-        </ul>
+          </span>
+        </li>
+        <li>
+          <span>Tech Stack: JavaScript, Node.js, React, Next.js, Tailwind CSS, shadcn/ui.</span>
+        </li>
+      </ul>
 
-        <p>
-          n00bdev{' '}
-          <a href='https://n00bdev.vercel.app' target='_blank'>
-            (n00bdev.vercel.app)
-          </a>{' '}
-          |{' '}
-          <a href='https://github.com/egarrisxn/n00bdev' target='_blank'>
-            github.com/egarrisxn/n00bdev
-          </a>
-        </p>
-        <ul>
-          <li>
+      <p>
+        n00bdev{' '}
+        <a href='https://n00bdev.vercel.app' target='_blank'>
+          (n00bdev.vercel.app)
+        </a>{' '}
+        |{' '}
+        <a href='https://github.com/egarrisxn/n00bdev' target='_blank'>
+          github.com/egarrisxn/n00bdev
+        </a>
+      </p>
+      <ul>
+        <li>
+          <span>
             Developed a server-side rendered blog, focusing on delivering insightful content with
             optimal performance.
-          </li>
-          <li>Tech Stack: TypeScript, Node.js, Astro, Tailwind CSS.</li>
-        </ul>
+          </span>
+        </li>
+        <li>
+          <span>Tech Stack: TypeScript, Node.js, Astro, Tailwind CSS.</span>
+        </li>
+      </ul>
 
-        <p>
-          EG Movies{' '}
-          <a href='https://eg-angular-movies.netlify.app' target='_blank'>
-            (eg-angular-movies.netlify.app)
-          </a>{' '}
-          |{' '}
-          <a href='https://github.com/egarrisxn/eg-angular-movies' target='_blank'>
-            github.com/egarrisxn/eg-angular-movies
-          </a>
-        </p>
-        <ul>
-          <li>
+      <p>
+        EG Movies{' '}
+        <a href='https://eg-angular-movies.netlify.app' target='_blank'>
+          (eg-angular-movies.netlify.app)
+        </a>{' '}
+        |{' '}
+        <a href='https://github.com/egarrisxn/eg-angular-movies' target='_blank'>
+          github.com/egarrisxn/eg-angular-movies
+        </a>
+      </p>
+      <ul>
+        <li>
+          <span>
             Built an intuitive movie database application featuring detailed information and a
             user-friendly interface.
-          </li>
-          <li>Tech Stack: TypeScript, Node.js, Angular, Tailwind CSS.</li>
-        </ul>
-      </main>
-    </div>
+          </span>
+        </li>
+        <li>
+          <span>Tech Stack: TypeScript, Node.js, Angular, Tailwind CSS.</span>
+        </li>
+      </ul>
+    </main>
   )
 }

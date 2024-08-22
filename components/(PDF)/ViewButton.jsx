@@ -43,7 +43,7 @@ export default function ViewButton({onGenerate}) {
 
   return (
     <button
-      className='mt-2 rounded bg-green-500 p-2 text-white'
+      className='rounded bg-green-500 p-2 text-white hover:bg-green-600'
       onClick={handleGeneratePDF}
       disabled={isGenerating}
     >

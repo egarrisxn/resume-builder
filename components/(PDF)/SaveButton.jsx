@@ -45,7 +45,7 @@ export default function SaveButton({onSave}) {
 
   return (
     <button
-      className='mt-2 rounded bg-blue-500 p-2 text-white'
+      className='rounded bg-blue-500 p-2 text-white hover:bg-blue-600'
       onClick={handleSavePDF}
       disabled={isSaving}
     >

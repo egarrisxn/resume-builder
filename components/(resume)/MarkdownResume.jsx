@@ -19,9 +19,5 @@ export default function MarkdownResume() {
       })
   }, [])
 
-  return (
-    <div className='my-4'>
-      <main dangerouslySetInnerHTML={{__html: content}} />
-    </div>
-  )
+  return <main dangerouslySetInnerHTML={{__html: content}} />
 }
