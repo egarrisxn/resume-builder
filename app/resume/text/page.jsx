@@ -1,4 +1,4 @@
-import TextResume from '@/components/TextResume'
+import TextResume from '@/components/(resume)/TextResume'
 
 export default function TextPage() {
   return <TextResume />
