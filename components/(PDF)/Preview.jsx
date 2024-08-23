@@ -8,6 +8,7 @@ export default function PDFPreview() {
 
   return (
     <>
+      <h1 className='text-center'>PDF Preview</h1>
       {pdfUrl ? (
         <Suspense fallback={<p>Loading PDF...</p>}>
           <iframe src={pdfUrl} style={{width: '100%', height: '100vh'}} />
