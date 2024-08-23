@@ -4,6 +4,8 @@
 
 **ResumeBuilder** is a simple yet powerful ATS-Certified resume builder web application. This project demonstrates multiple ways to generate and save resumes in different formats such as Markdown, MDX, plain text, and JSON. This project also allows you to preview and print a pdf version of your resume. It uses modern web technologies to ensure a seamless and efficient user experience.
 
+![resumebuilder](https://github.com/user-attachments/assets/a03aad45-2787-433e-9405-db571ed4b6f1)
+
 ## Features
 
 - **Resume Formats:** Supports Markdown, MDX, plain text, and JSON formats.
