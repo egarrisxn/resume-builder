@@ -5,15 +5,23 @@ export async function POST(req) {
     const {content} = await req.json()
     const lines = content.split('\n')
 
-    // Create a new PDFDocument
+    //! Create a new PDFDocument
     const pdfDoc = await PDFDocument.create()
 
-    // Define page size for a standard US Letter
+    //! Define page size
+    //? US Letter format
     const pageWidth = 8.5 * 72 // 612 points (8.5 inches)
     const pageHeight = 11 * 72 // 792 points (11 inches)
+    //? A4 format
+    // const pageWidth = 8.27 * 72 // 595.44 points (8.5 inches)
+    // const pageHeight = 11.69 * 72 // 841.68 points (11 inches)
 
-    // Add a page with the desired size
+    //! Add a page with the desired size
     const page = pdfDoc.addPage([pageWidth, pageHeight])
+
+    // Check and log the size of the page to verify
+    console.log(`Page size set to: ${pageWidth} x ${pageHeight} points`) // Log the set dimensions
+    console.log(`Actual page size: ${page.getWidth()} x ${page.getHeight()} points`) // Log the actual dimensions
 
     // Embed fonts
     const helveticaFont = await pdfDoc.embedFont(StandardFonts.Helvetica)
@@ -21,7 +29,7 @@ export async function POST(req) {
 
     let {width, height} = page.getSize()
 
-    // Font Sizes and Spacing
+    //! Font Sizes and Spacing
     const fontSize = 9 // Font size for body text
     const headerFontSize = 9 // Font size for default headers
     const largerHeaderFontSize = 11 // Font size for specific larger headers
@@ -33,10 +41,10 @@ export async function POST(req) {
     const margin = 16 // Margin from page edges
     const maxLineWidth = width - 2 * margin // Maximum width for text lines
 
-    // Initial y position for text, starting from top margin
+    //! Initial y position for text, starting from top margin
     let yPosition = height - 2.8 * fontSize
 
-    // Define header keywords to identify header lines
+    //! Define header keywords to identify header lines
     const headerKeywords = {
       'Ethan Garrison (he/him)': largestHeaderFontSize,
       'Full-Stack Developer': largerHeaderFontSize,
@@ -71,12 +79,12 @@ export async function POST(req) {
       const isHeader = headerKeywords.hasOwnProperty(trimmedLine)
       const isBulletPoint = trimmedLine.startsWith('-')
 
-      // Determine the font and size based on whether it's a header or not
+      //! Determine the font and size based on whether it's a header or not
       const currentFont = isHeader ? helveticaBoldFont : helveticaFont
       const currentFontSize = isHeader ? headerKeywords[trimmedLine] || headerFontSize : fontSize
 
       if (isBulletPoint) {
-        // Draw bullet point
+        //! Draw bullet point
         page.drawText('•', {
           x: margin,
           y: yPosition,
@@ -85,7 +93,7 @@ export async function POST(req) {
           color: rgb(0.039, 0.58, 0.98),
         })
 
-        // Draw text after bullet point with some indent
+        //! Draw text after bullet point with some indent
         const textAfterBullet = trimmedLine.replace(/^- /, '').trim()
 
         page.drawText(textAfterBullet, {
@@ -96,10 +104,10 @@ export async function POST(req) {
           color: rgb(0, 0, 0),
         })
 
-        // Apply additional line spacing for bullet points
+        //! Apply additional line spacing for bullet points
         yPosition -= 1.0 * lineHeight // Increase spacing after bullet points
       } else {
-        // Split the line into chunks that fit the page width
+        //! Split the line into chunks that fit the page width
         const words = trimmedLine.split(' ')
         let currentLine = ''
         words.forEach((word) => {
@@ -109,7 +117,7 @@ export async function POST(req) {
           if (testLineWidth < maxLineWidth) {
             currentLine = testLine
           } else {
-            // Draw the current line and reset for the next line
+            //! Draw the current line and reset for the next line
             page.drawText(currentLine, {
               x: margin,
               y: yPosition,
@@ -122,12 +130,12 @@ export async function POST(req) {
             if (yPosition < 0) {
               return
             }
-            // Set the current line to the word that didn't fit
+            //! Set the current line to the word that didn't fit
             currentLine = word
           }
         })
 
-        // Draw the last line if any content is left
+        //! Draw the last line if any content is left
         if (currentLine) {
           page.drawText(currentLine, {
             x: margin,
@@ -140,7 +148,7 @@ export async function POST(req) {
         }
       }
 
-      // Apply paragraph spacing after empty lines
+      //! Apply paragraph spacing after empty lines
       if (trimmedLine === '') {
         yPosition -= paragraphSpacing
       }
