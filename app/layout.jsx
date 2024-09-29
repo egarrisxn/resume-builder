@@ -10,9 +10,9 @@ const roboto = Roboto({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://resume-builder-omega-beige.vercel.app/'),
-  title: 'resume-builder',
-  description: 'Some resumes.',
+  metadataBase: new URL('https://resume-builder-omega-beige.vercel.app'),
+  title: 'Resume Builder.',
+  description: 'ATS Certified Resume',
   referrer: 'origin-when-cross-origin',
   keywords: [
     'nextjs, next14, react, reactjs, tailwindcss, javascript, mdx, markdown, json, api, resume, resume-builder',
@@ -32,17 +32,17 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    title: 'resume-builder',
-    description: 'Some resumes.',
+    title: 'Resume Builder.',
+    description: 'ATS Certified Resume',
     url: 'https://resume-builder-omega-beige.vercel.app',
-    siteName: 'egxblog.net',
+    siteName: 'resume-builder-omega-beige.vercel.app',
   },
   twitter: {
     cardType: 'summary_large_image',
-    handle: 'eg_xo_',
-    site: 'https://twitter.com/eg_xo_',
-    title: 'resume-builder',
-    description: 'Some resumes.',
+    handle: 'eg__xo',
+    site: 'https://x.com/eg__xo',
+    title: 'Resume Builder.',
+    description: 'ATS Certified Resume',
   },
 }
 

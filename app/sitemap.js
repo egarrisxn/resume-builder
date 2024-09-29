@@ -1,7 +1,7 @@
 export default function sitemap() {
   return [
     {
-      url: 'https://resume-builder-omega-beige.vercel.app/',
+      url: 'https://resume-builder-omega-beige.vercel.app',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 1,
