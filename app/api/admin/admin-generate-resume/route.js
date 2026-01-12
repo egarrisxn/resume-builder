@@ -26,14 +26,14 @@ export async function POST(req) {
     let {width, height} = page.getSize()
 
     //! Font Sizes and Spacing
-    const h1 = 26 // Name
-    const h2 = 16 // Title
-    const h3 = 14 // Section headers
+    const h1 = 20 // Name
+    const h2 = 14 // Title
+    const h3 = 12.5 // Section headers
     const h4 = 11.5 // Job/project headers
     const p = 11 // Body text
 
     const lineHeight = 1.2 * p
-    const paragraphSpacing = 0.8 * lineHeight
+    const paragraphSpacing = 0.75 * lineHeight
     const bulletSize = p
     const bulletIndent = 7
     const margin = 32

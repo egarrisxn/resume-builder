@@ -1,6 +1,6 @@
 Ethan Garrison
 Full Stack Developer
-Orlando, FL | +1 (580) 284-4513 | Egarrisxn@gmail.com
+Orlando, FL | +1(580)284-4513 | Egarrisxn@gmail.com
 https://egxo.dev | https://linkedin.com/in/ethan-gx | https://github.com/egarrisxn
 
 Summary
@@ -39,8 +39,8 @@ Studied
 
 Skills
 - Front-End: JavaScript, TypeScript, React, Next.js, Tailwind CSS, HTML5, CSS3
-- Back-End: Node.js, Express, MongoDB, PostgreSQL, Supabase, REST APIs
-- DevOps & Tools: Git, Vercel, Heroku, Netlify, Stripe, Clerk, Sanity CMS
+- Back-End: Node.js, MongoDB, PostgreSQL, REST APIs, Serverless/Edge Functions
+- DevOps & Tools: Git, Vercel, Netlify, Supabase, Clerk, Stripe, Sanity CMS
 - Best Practices: Performance Optimization, SEO, CI/CD, UX/UI Design
 
 Projects
