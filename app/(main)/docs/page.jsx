@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import {Github} from 'lucide-react'
 
 export const metadata = {
   title: 'Docs',
@@ -40,7 +39,7 @@ export default function DocsPage() {
                   rel='noopener noreferrer'
                   className='mt-2 inline-flex items-center rounded-md bg-blue-100 px-3 py-2 text-sm font-medium text-blue-600 hover:bg-blue-200 focus:ring-2 focus:ring-blue-500 focus:outline-none'
                 >
-                  View on GitHub <Github className='ml-2' />
+                  View on GitHub.
                 </a>
               </div>
             </div>
