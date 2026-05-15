@@ -29,7 +29,6 @@ This project leverages the following cutting-edge technologies:
 - **Content Formats:** [Markdown](https://www.markdownguide.org/) & [MDX](https://mdxjs.com/) - Powerful ways to write content with React components.
 - **Linting & Formatting:** [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/) - Ensuring code quality and consistency.
 - **PDF Generation Library:** [pdf-lib](https://pdf-lib.js.org/) - A JavaScript library to create and modify PDF documents.
-- **Icon Library:** [lucide-react](https://lucide.dev/) - Beautifully simple icons for your interface.
 - **Content Parsing:** [remark](https://remark.js.org/) & [remark-html](https://github.com/remarkjs/remark-html) - Markdown processor and HTML converter.
 - **Remote MDX:** [next-mdx-remote](https://github.com/hashicorp/next-mdx-remote) - Render MDX from external sources.
 
