@@ -1,19 +1,21 @@
 Ethan Garrison
 Full Stack Developer
-Orlando, FL | +1(580)284-4513 | Egarrisxn@gmail.com
-https://egxo.dev | https://linkedin.com/in/ethan-gx | https://github.com/egarrisxn
+Orlando, FL | (580) 284-4513 | Ethan@egxo.dev
+https://linkedin.com/in/ethan-gx | https://github.com/egarrisxn
 
 Summary
-Full Stack Developer skilled in building accessible, responsive front-end interfaces and scalable back-end systems. Experienced in delivering end-to-end solutions from UI to deployment, with a background in leadership and client-facing roles that emphasize clear communication, collaboration, and project management.
+Full Stack Developer specializing in React, Next.js, and TypeScript, building accessible, responsive interfaces and scalable back-end APIs. I’ve shipped end-to-end web applications through deployment on Vercel/Netlify and integrated modern tooling like Supabase and Sanity CMS. With 10+ years of experience across leadership and management, I bring strong communication, ownership, and stakeholder collaboration to every project.
 
 Work Experience
-Full Stack Developer | Freelance, Orlando, FL | Jun 2023 - Present
+Full Stack Developer (Freelance) | Egxo.dev, Orlando, FL | Jun 2023 - Present
 - Build and deploy applications using React, enabling clients to launch responsive, accessible products.
 - Integrate APIs and optimize front-end performance, reducing load times and enhancing UX.
+- Collaborate with non-technical stakeholders to gather requirements and swiftly ship features.
 
-Creative Tech & Event Lead | Sway Bae, Orlando, FL | Jan 2023 - Present
-- Coordinate scheduling, filming, and logistics for branded events, ensuring smooth execution.
-- Design and maintain website with custom assets, boosting engagement and ensuring brand consistency.
+Creative Tech & Event Lead | Sway Bae Official, Orlando, FL | Jan 2023 - Present
+- Designed and maintained a CMS-integrated website for team-managed content updates.
+- Coordinated scheduling, filming, and logistics for branded events from concept to wrap-up.
+- Maintained brand consistency across events and digital touchpoints through custom components and layouts.
 
 Regional Account Manager | Armadillo Ale Works, Denton, TX | Mar 2020 - Jan 2023
 - Streamlined collaboration across sales, production, and marketing, improving workflow efficiency.
@@ -38,14 +40,18 @@ Business Management | University of Central Oklahoma, Edmond, OK | 2008 - 2009
 Studied
 
 Skills
-- Front-End: JavaScript, TypeScript, React, Next.js, Tailwind CSS, HTML5, CSS3
-- Back-End: Node.js, MongoDB, PostgreSQL, REST APIs, Serverless/Edge Functions
-- DevOps & Tools: Git, Vercel, Netlify, Supabase, Clerk, Stripe, Sanity CMS
-- Best Practices: Performance Optimization, SEO, CI/CD, UX/UI Design
+- Technical: JavaScript, TypeScript, React, Next.js, Node.js, REST APIs, PostgreSQL, NoSQL
+- Tools: Git, GitHub, Vercel, Netlify, Stripe, Clerk, Supabase, MongoDB, Sanity CMS
+- Best Practices: Performance Optimization, SEO, CI/CD, Responsible UX/UI Design
+- Soft Skills: Relationship Building, Cross-Functional Collaboration, Adaptability, Problem Solving
 
 Projects
-Quik|Res | https://github.com/egarrisxn/quikres | https://quikres.vercel.app
-- Built an AI-powered resume-to-website generator with Supabase, enabling instant creation of personal sites.
+Quik|Res - Resume-to-Website Generator | https://quikres.vercel.app
+- Built a React/Next.js application that converts a user's resume into a deployed personal website in minutes.
+- Used Supabase for data storage and Next.js API routes for server-side generation and deployment on Vercel.
+- Implemented themeable layouts with intuitive forms so non-technical users can quickly customize their sites.
 
-ManyLinks | https://github.com/egarrisxn/manylinks | https://manylinks.vercel.app
-- Developed a sleek single-page link aggregator with MongoDB, making it easy to showcase essential links.
+ManyLinks - Single-Page Link Aggregator | https://manylinks.vercel.app
+- Developed a link-in-bio style app using React and Tailwind CSS, backed by MongoDB for storing profile data.
+- Designed a clean, mobile-first layout so creators can share all important links via one branded URL.
+- Added basic analytics-ready structure, enabling future tracking of link clicks and engagement.
