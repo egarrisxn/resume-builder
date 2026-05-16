@@ -6,7 +6,7 @@ import SaveResumeButton from './SaveResumeButton'
 import SaveCoverLetterButton from './SaveCoverLetterButton'
 
 export default function AllButtons() {
-  const [pdfUrl, setPdfUrl] = useState(null)
+  const [, setPdfUrl] = useState(null)
 
   const handleGenerate = (url) => {
     setPdfUrl(url)

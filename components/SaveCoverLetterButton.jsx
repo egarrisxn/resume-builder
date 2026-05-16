@@ -16,31 +16,41 @@ export default function SaveCoverLetterButton({}) {
     if (!content) return
 
     setIsSaving(true)
-    try {
-      const response = await fetch('/api/generate-cover-letter', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({content: content.trim()}),
-      })
 
-      if (!response.ok) {
-        throw new Error('Failed to save cover letter')
-      }
-
-      const blob = await response.blob()
-      const url = URL.createObjectURL(blob)
-      const link = document.createElement('a')
-      link.href = url
-      link.download = 'cover-letter.pdf'
-      link.click()
-      URL.revokeObjectURL(url)
-    } catch (error) {
+    const response = await fetch('/api/generate-cover-letter', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({content: content.trim()}),
+    }).catch((error) => {
       console.error('Error saving cover letter:', error)
-    } finally {
+      return null
+    })
+
+    if (!response || !response.ok) {
+      console.error('Failed to save cover letter')
       setIsSaving(false)
+      return
     }
+
+    const blob = await response.blob().catch((error) => {
+      console.error('Error reading response blob:', error)
+      return null
+    })
+
+    if (!blob) {
+      setIsSaving(false)
+      return
+    }
+
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = 'cover-letter.pdf'
+    link.click()
+    URL.revokeObjectURL(url)
+    setIsSaving(false)
   }
 
   return (

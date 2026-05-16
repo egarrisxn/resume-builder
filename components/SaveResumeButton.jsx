@@ -16,31 +16,41 @@ export default function SaveResumeButton({}) {
     if (!content) return
 
     setIsSaving(true)
-    try {
-      const response = await fetch('/api/generate-resume', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({content: content.trim()}),
-      })
 
-      if (!response.ok) {
-        throw new Error('Failed to save resume')
-      }
-
-      const blob = await response.blob()
-      const url = URL.createObjectURL(blob)
-      const link = document.createElement('a')
-      link.href = url
-      link.download = 'resume.pdf'
-      link.click()
-      URL.revokeObjectURL(url)
-    } catch (error) {
+    const response = await fetch('/api/generate-resume', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({content: content.trim()}),
+    }).catch((error) => {
       console.error('Error saving resume:', error)
-    } finally {
+      return null
+    })
+
+    if (!response || !response.ok) {
+      console.error('Failed to save resume')
       setIsSaving(false)
+      return
     }
+
+    const blob = await response.blob().catch((error) => {
+      console.error('Error reading response blob:', error)
+      return null
+    })
+
+    if (!blob) {
+      setIsSaving(false)
+      return
+    }
+
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = 'resume.pdf'
+    link.click()
+    URL.revokeObjectURL(url)
+    setIsSaving(false)
   }
 
   return (

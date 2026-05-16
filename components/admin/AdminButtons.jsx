@@ -6,7 +6,7 @@ import SaveAdminResumeButton from './SaveAdminResumeButton'
 import SaveAdminCoverLetterButton from './SaveAdminCoverLetterButton'
 
 export default function AdminButtons() {
-  const [pdfUrl, setPdfUrl] = useState(null)
+  const [, setPdfUrl] = useState(null)
 
   const handleGenerate = (url) => {
     setPdfUrl(url)

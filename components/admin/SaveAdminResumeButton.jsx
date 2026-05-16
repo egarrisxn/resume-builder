@@ -1,7 +1,7 @@
 'use client'
 import {useState, useEffect} from 'react'
 
-export default function SaveAdminResumeButton({onGenerate}) {
+export default function SaveAdminResumeButton() {
   const [content, setContent] = useState('')
   const [isSaving, setIsSaving] = useState(false)
   useEffect(() => {
@@ -15,29 +15,41 @@ export default function SaveAdminResumeButton({onGenerate}) {
     if (!content) return
 
     setIsSaving(true)
-    try {
-      const response = await fetch('/api/admin/admin-generate-resume', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({content: content.trim()}),
-      })
-      if (!response.ok) {
-        throw new Error('Failed to save admin resume')
-      }
-      const blob = await response.blob()
-      const url = URL.createObjectURL(blob)
-      const link = document.createElement('a')
-      link.href = url
-      link.download = 'admin-resume.pdf'
-      link.click()
-      URL.revokeObjectURL(url)
-    } catch (error) {
+
+    const response = await fetch('/api/admin/admin-generate-resume', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({content: content.trim()}),
+    }).catch((error) => {
       console.error('Error saving admin resume:', error)
-    } finally {
+      return null
+    })
+
+    if (!response || !response.ok) {
+      console.error('Failed to save admin resume')
       setIsSaving(false)
+      return
     }
+
+    const blob = await response.blob().catch((error) => {
+      console.error('Error reading response blob:', error)
+      return null
+    })
+
+    if (!blob) {
+      setIsSaving(false)
+      return
+    }
+
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = 'admin-resume.pdf'
+    link.click()
+    URL.revokeObjectURL(url)
+    setIsSaving(false)
   }
   return (
     <button

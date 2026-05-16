@@ -18,27 +18,37 @@ export default function ViewAdminResumeButton({}) {
     if (!content) return
 
     setIsGenerating(true)
-    try {
-      const response = await fetch('/api/admin/admin-generate-resume', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({content: content.trim()}),
-      })
 
-      if (!response.ok) {
-        throw new Error('Failed to generate admin resume')
-      }
-
-      const blob = await response.blob()
-      const url = URL.createObjectURL(blob)
-      router.push(`/pdf/admin-preview?pdfUrl=${encodeURIComponent(url)}`)
-    } catch (error) {
+    const response = await fetch('/api/admin/admin-generate-resume', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({content: content.trim()}),
+    }).catch((error) => {
       console.error('Error generating resume:', error)
-    } finally {
+      return null
+    })
+
+    if (!response || !response.ok) {
+      console.error('Failed to generate admin resume')
       setIsGenerating(false)
+      return
     }
+
+    const blob = await response.blob().catch((error) => {
+      console.error('Error reading response blob:', error)
+      return null
+    })
+
+    if (!blob) {
+      setIsGenerating(false)
+      return
+    }
+
+    const url = URL.createObjectURL(blob)
+    router.push(`/pdf/admin-preview?pdfUrl=${encodeURIComponent(url)}`)
+    setIsGenerating(false)
   }
 
   return (
