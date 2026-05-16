@@ -26,14 +26,14 @@ export async function POST(req) {
     let {width, height} = page.getSize()
 
     //! Font Sizes and Spacing
-    const h1 = 18 // Name
-    const h2 = 13.5 // Title
-    const h3 = 12.5 // Section headers
+    const h1 = 19 // Name
+    const h2 = 14 // Title
+    const h3 = 13 // Section headers
     const h4 = 10.5 // Job/project headers
     const p = 9.5 // Body text
 
     const lineHeight = 1.2 * p
-    const paragraphSpacing = 0.75 * lineHeight
+    const paragraphSpacing = 0.8 * lineHeight
     const bulletSize = p
     const bulletIndent = 7
     const margin = 32
@@ -47,7 +47,7 @@ export async function POST(req) {
       'Ethan Garrison': h1,
       'Full Stack Developer': h2,
       Summary: h3,
-      'Work Experience': h3,
+      Experience: h3,
       'Full Stack Developer (Freelance) | Egxo.dev, Orlando, FL | Jun 2023 - Present': h4,
       'Creative Tech & Event Lead | Sway Bae Official, Orlando, FL | Jan 2023 - Present': h4,
       'Regional Account Manager | Armadillo Ale Works, Denton, TX | Mar 2020 - Jan 2023': h4,
@@ -60,7 +60,7 @@ export async function POST(req) {
       'Business Management | University of Central Oklahoma, Edmond, OK | 2008 - 2009': h4,
       Skills: h3,
       Projects: h3,
-      'Quik|Res - Resume-to-Website Generator | https://quikres.vercel.app': h4,
+      'QuikRes - Resume-to-Website Generator | https://quikres.vercel.app': h4,
       'ManyLinks - Single-Page Link Aggregator | https://manylinks.vercel.app': h4,
     }
 
@@ -154,11 +154,11 @@ export async function POST(req) {
       }
 
       if (
-        ['Summary', 'Work Experience', 'Education & Certifications', 'Skills', 'Projects'].includes(
+        ['Summary', 'Experience', 'Education & Certifications', 'Skills', 'Projects'].includes(
           trimmedLine,
         )
       ) {
-        yPosition -= 0.6 * lineHeight
+        yPosition -= 0.7 * lineHeight
       }
 
       //! Apply paragraph spacing after empty lines

@@ -6,7 +6,7 @@ https://linkedin.com/in/ethan-gx | https://github.com/egarrisxn
 Summary
 Full Stack Developer specializing in React, Next.js, and TypeScript, building accessible, responsive interfaces and scalable back-end APIs. I’ve shipped end-to-end web applications through deployment on Vercel/Netlify and integrated modern tooling like Supabase and Sanity CMS. With 10+ years of experience across leadership and management, I bring strong communication, ownership, and stakeholder collaboration to every project.
 
-Work Experience
+Experience
 Full Stack Developer (Freelance) | Egxo.dev, Orlando, FL | Jun 2023 - Present
 - Build and deploy applications using React, enabling clients to launch responsive, accessible products.
 - Integrate APIs and optimize front-end performance, reducing load times and enhancing UX.
@@ -46,7 +46,7 @@ Skills
 - Soft Skills: Relationship Building, Cross-Functional Collaboration, Adaptability, Problem Solving
 
 Projects
-Quik|Res - Resume-to-Website Generator | https://quikres.vercel.app
+QuikRes - Resume-to-Website Generator | https://quikres.vercel.app
 - Built a React/Next.js application that converts a user's resume into a deployed personal website in minutes.
 - Used Supabase for data storage and Next.js API routes for server-side generation and deployment on Vercel.
 - Implemented themeable layouts with intuitive forms so non-technical users can quickly customize their sites.
